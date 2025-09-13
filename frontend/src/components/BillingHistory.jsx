@@ -4,6 +4,7 @@ function BillingHistory() {
   const [history, setHistory] = useState([]);
 
   useEffect(() => {
+    // Replace with backend API when ready
     fetch("http://localhost:5000/api/billing-history?userId=123")
       .then((res) => res.json())
       .then((data) => setHistory(data))
@@ -18,6 +19,12 @@ function BillingHistory() {
           { billing_id: 7, subscription_id: 97, amount: 194.83, billing_date: "2024-08-27", payment_status: "failed" },
           { billing_id: 8, subscription_id: 17, amount: 32.64, billing_date: "2024-09-13", payment_status: "pending" },
           { billing_id: 9, subscription_id: 10, amount: 336.98, billing_date: "2024-09-12", payment_status: "pending" },
+          { billing_id: 10, subscription_id: 63, amount: 376.25, billing_date: "2023-12-02", payment_status: "pending" },
+          { billing_id: 11, subscription_id: 86, amount: 493.15, billing_date: "2024-06-26", payment_status: "failed" },
+          { billing_id: 12, subscription_id: 51, amount: 10.43, billing_date: "2024-07-02", payment_status: "paid" },
+          { billing_id: 13, subscription_id: 85, amount: 463.86, billing_date: "2024-02-12", payment_status: "failed" },
+          { billing_id: 14, subscription_id: 18, amount: 84.45, billing_date: "2024-08-08", payment_status: "failed" },
+          { billing_id: 15, subscription_id: 74, amount: 110.86, billing_date: "2024-07-24", payment_status: "failed" },
         ]);
       });
   }, []);
