@@ -1,42 +1,177 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+.plans-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.plan-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 22px 18px;
+  background: #f7fafc;
+  border-radius: 12px;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.07);
+  transition: box-shadow 0.2s;
+}
+
+.plan-card:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.13);
+}
+
+.plan-logo-container {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e6f5e5;
+  border-radius: 10px;
+  width: 85px;
+  height: 85px;
+}
+
+.plan-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.plan-details {
+  flex: 1;
+  margin-left: 8px;
+}
+
+.plan-details h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.plan-details p {
+  margin: 2px 0;
+  font-size: 15px;
+  color: #444;
+}
+
+.plan-details ul {
+  margin-top: 10px;
+  padding-left: 20px;
+  color: #666;
+  font-size: 13px;
+}
+
+.subscribe-button {
+  background-color: #0066ff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+  box-shadow: 0 2px 6px rgba(0, 102, 255, 0.2);
+}
+
+.subscribe-button:hover {
+  background-color: #004bb5;
+}
+
+.payment-container {
+  max-width: 440px;
+  margin: 40px auto;
+  padding: 30px 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.payment-container h2 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #222;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.payment-buttons button {
+  background-color: #10a37f;
+  border: none;
+  color: white;
+  padding: 14px 25px;
+  margin: 10px 10px 10px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.payment-buttons button:hover {
+  background-color: #0e856c;
 }
 
-.card {
-  padding: 2em;
+.input-field {
+  width: 100%;
+  padding: 14px 12px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
 }
 
-.read-the-docs {
-  color: #888;
+.input-field:focus {
+  outline: none;
+  border-color: #10a37f;
+  box-shadow: 0 0 6px #10a37f66;
+}
+
+.upi-apps {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 20px 0;
+}
+
+.upi-apps img {
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.upi-apps img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.success-popup {
+  margin-top: 35px;
+  background-color: #d4edda;
+  border: 1.5px solid #28a745;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  color: #155724;
+  font-weight: 600;
 }
