@@ -1,0 +1,13 @@
+.topbar {
+  background: #f3f4f6;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin-left: 220px;
+}
+.topbar-right span {
+  margin-left: 20px;
+  cursor: pointer;
+}
